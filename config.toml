@@ -1,0 +1,121 @@
+baseurl = "https://examplesite.org"
+languageCode = "en-us"
+title = "Parsa Hugo | Personal Blog Template"
+theme = "parsa hugo"
+summaryLength = "10"
+paginate = 6
+googleAnalytics = ""
+themesDir = "themes"
+baseURL = ""
+publishDir = "public"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params]
+logo = "images/logo.png"
+home = "Home"
+layout = "1"
+description = "This is meta description"
+preloader = true
+search = true
+author = "John Doe"
+author_image = "images/banner-img.png"
+bio = "I’m a Freelance Interactive Art Director based in France. Focusing across branding and identity, digital and print."
+mobile = "+90 000 333 22"
+email = "exmaple@ymail.com"
+address = "6 rip carl Avenue CA 90733"
+contact_form_action = "#"
+copyright = "Copyright &copy; 2020 a theme by [themefisher.com](https://themefisher.com)"
+
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+
+[[params.plugins.js]]
+link = "plugins/headroom/headroom.js"
+
+[[params.plugins.js]]
+link = "plugins/instafeed/instafeed.min.js"
+
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.js"
+
+[[params.plugins.js]]
+link = "plugins/reading-time/readingTime.min.js"
+
+[[params.plugins.js]]
+link = "plugins/smooth-scroll/smooth-scroll.js"
+
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+  [params.instafeed]
+  enable = true
+  access_token = "IGQVJYeUk4YWNIY1h4OWZANeS1wRHZARdjJ5QmdueXN2RFR6NF9iYUtfcGp1NmpxZA3RTbnU1MXpDNVBHTzZAMOFlxcGlkVHBKdjhqSnUybERhNWdQSE5hVmtXT013MEhOQVJJRGJBRURn"
+
+  [params.cookies]
+  enable = true
+  expire_days = 2
+
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "https://facebook.com/themefisher"
+
+  [[params.social]]
+  icon = "ti-twitter-alt"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-linkedin"
+  link = "#"
+
+  [[params.social]]
+  icon = "ti-github"
+  link = "#"
+
+[[menu.main]]
+name = "Homepage"
+url = ""
+weight = 1
+hasChildren = true
+
+[[menu.main]]
+parent = "Homepage"
+name = "Homepage 1"
+url = "homepage/home-1"
+
+[[menu.main]]
+parent = "Homepage"
+name = "Homepage 2"
+url = "homepage/home-2"
+
+[[menu.main]]
+name = "About"
+url = "about"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+url = "contact"
+weight = 3
